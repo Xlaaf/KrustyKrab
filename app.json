@@ -8,7 +8,7 @@
          "manager",
          "Spongebob"
       ],   
-   "repository": "https://github.com/FtSasaki/SenkuRobot",
+   "repository": "https://github.com/Xlaaf/KrustyRobot",
    "logo": "https://telegra.ph/file/7d7e1e33525dadf3f7cb7.jpg",
    "addons": [
     {
@@ -32,7 +32,7 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": "1659862983:AAGA-Vq6oX9H1yL5Wu8FUK0zL43FJEOrn5s"
+         "value": ""
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
