@@ -43,7 +43,7 @@ RMUTE_ERRORS = {
     "User_not_participant", "Peer_id_invalid", "Group chat was deactivated",
     "Need to be inviter of a user to punch it from a basic group",
     "Chat_admin_required",
-    "Only the creator of a basic group can punch group administrators",
+    "Only the creator of a basic group can cook group administrators",
     "Channel_private", "Not in the chat"
 }
 
@@ -53,7 +53,7 @@ RUNMUTE_ERRORS = {
     "User_not_participant", "Peer_id_invalid", "Group chat was deactivated",
     "Need to be inviter of a user to punch it from a basic group",
     "Chat_admin_required",
-    "Only the creator of a basic group can punch group administrators",
+    "Only the creator of a basic group can cook group administrators",
     "Channel_private", "Not in the chat"
 }
 
@@ -115,7 +115,7 @@ def rban(update: Update, context: CallbackContext):
         return
 
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("I'm not gonna BAN myself, are you stupid?")
         return
 
     try:
@@ -252,7 +252,7 @@ def rkick(update: Update, context: CallbackContext):
     if not is_bot_admin(chat, bot.id) or not chat.get_member(
             bot.id).can_restrict_members:
         message.reply_text(
-            "I can't restrict people there! Make sure I'm admin and can punch users."
+            "I can't restrict people there! Make sure I'm admin and can cook users."
         )
         return
 
@@ -270,7 +270,7 @@ def rkick(update: Update, context: CallbackContext):
         return
 
     if user_id == bot.id:
-        message.reply_text("I'm not gonna punch myself, are you crazy?")
+        message.reply_text("I'm not gonna cook myself, are you crazy?")
         return
 
     try:
@@ -286,7 +286,7 @@ def rkick(update: Update, context: CallbackContext):
             LOGGER.warning(update)
             LOGGER.exception("ERROR punching user %s in chat %s (%s) due to %s",
                              user_id, chat.title, chat.id, excp.message)
-            message.reply_text("Well damn, I can't punch that user.")
+            message.reply_text("Well damn, I can't cook that user.")
 
 
 @run_async
@@ -459,7 +459,7 @@ RBAN_HANDLER = CommandHandler("rban", rban, filters=CustomFilters.sudo_filter)
 RUNBAN_HANDLER = CommandHandler(
     "runban", runban, filters=CustomFilters.sudo_filter)
 RKICK_HANDLER = CommandHandler(
-    "rpunch", rkick, filters=CustomFilters.sudo_filter)
+    "rcook", rkick, filters=CustomFilters.sudo_filter)
 RMUTE_HANDLER = CommandHandler(
     "rmute", rmute, filters=CustomFilters.sudo_filter)
 RUNMUTE_HANDLER = CommandHandler(
