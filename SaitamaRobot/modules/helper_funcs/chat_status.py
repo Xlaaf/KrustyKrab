@@ -137,7 +137,7 @@ def sudo_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?")
+                "Who dis non-admin telling me what to do? ")
 
     return is_sudo_plus_func
 
@@ -175,7 +175,7 @@ def whitelist_plus(func):
             return func(update, context, *args, **kwargs)
         else:
             update.effective_message.reply_text(
-                f"You don't have access to use this.\nVisit @{SUPPORT_CHAT}")
+                f"You don't have access to use this.\nVisit @VohaUnion")
 
     return is_whitelist_plus_func
 
@@ -199,7 +199,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?")
+                "Who dis non-admin telling me what to do?")
 
     return is_admin
 
@@ -254,7 +254,7 @@ def bot_admin(func):
         if update_chat_title == message_chat_title:
             not_admin = "I'm not admin! - REEEEEE"
         else:
-            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - REEEEEE"
+            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - "
 
         if is_bot_admin(chat, bot.id):
             return func(update, context, *args, **kwargs)
