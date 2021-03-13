@@ -6,10 +6,10 @@ RUN_STRINGS = (
     "Look out for the wall!",
     "Don't leave me alone with them!!",
     "You've got company!",
-    "Chotto matte!",
+    "SSSSQQQQQUUUUUUIIIIDDDDDWWWWAAAAARRRDDD",
     "Yare yare daze",
-    "*Naruto run activated*",
-    "*Nezuko run activated*",
+    "*Spongebob run activated*",
+    "*Patrick run activated*",
     "Hey take responsibilty for what you just did!",
     "May the odds be ever in your favour.",
     "Run everyone, they just dropped a bomb 💣💣",
@@ -21,9 +21,9 @@ RUN_STRINGS = (
 )
 
 GIFS = [
-    'CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE',
-    'CgACAgUAAx0CU_rCTAABAjdgX1s4NVaeCls6YaH3p43vgdCRwQIAAqsAA4P_MFUYQhyoR-kgpRsE',
-    'CgACAgUAAx0CU_rCTAABAjdSX1s3fq5iEJ64YeQLKI8cD7CSuSEAAlUBAAJu09hW5iqWB0hTPD4bBA'
+    'BAADBAADUwIAAmynlVLMzEfG-Opu5gI',
+    'BAADBAAD7wEAAqWv7FMdRX-X3ZeIewI',
+    'BAADBAADBAIAAmvklFLjgylRgH_5fQI'
 ]
 
 SLAP_SAITAMA_TEMPLATES = (
