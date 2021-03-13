@@ -17,8 +17,8 @@ DEFAULT_WELCOME_MESSAGES = [
     "A wild {first} appeared.",
     "{first} came in like a Lion!",
     "{first} has joined your party.",
-    "{first} just joined. Can I get a heal?",
-    "{first} just joined the chat - asdgfhak!",
+    "{first} just joined. Can I get a Krabby patty?",
+    "{first} just joined the chat - where you license?",
     "{first} just joined. Everyone, look busy!",
     "Welcome, {first}. Stay awhile and listen.",
     "Welcome, {first}. We were expecting you ( ͡° ͜ʖ ͡°)",
@@ -84,7 +84,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hey {first}, we have the droids you are looking for.",
     "Hi {first}\nThis isn't a strange place, this is my home, it's the people who are strange.",
     "Oh, hey {first} what's the password?",
-    "Hey {first}, I know what we're gonna do today",
+    "Hey {first}, Visit @VohaUnion For You Password!",
     "{first} just joined, be at alert they could be a spy.",
     "{first} joined the group, read by Mark Zuckerberg, CIA and 35 others.",
     "Welcome {first}, watch out for falling monkeys.",
@@ -92,7 +92,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hey {first}, do you wanna know how I got these scars?",
     "Welcome {first}, drop your weapons and proceed to the spy scanner.",
     "Stay safe {first}, Keep 3 meters social distances between your messages.",  #Corona memes lmao
-    "Hey {first}, Do you know I once One-punched a meteorite?",
+    "Hey {first}, Do you know about the flying dutchman?",
     "You’re here now {first}, Resistance is futile",
     "{first} just arrived, the force is strong with this one.",
     "{first} just joined on president’s orders.",
@@ -119,7 +119,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Irasshaimase {first}!",  #weeabo shit
     "Hi {first}, what is 1000-7?",  #tokyo ghoul
     "Come. I don't want to destroy this place",  #hunter x hunter
-    "I... am... Whitebeard!...wait..wrong anime.",  #one Piece
+    "I... am... Marsha!...wait..wrong animation.",  #one Piece
     "Hey {first}...have you ever heard these words?",  #BNHA
     "Can't a guy get a little sleep around here?",  #Kamina Falls – Gurren Lagann
     "It's time someone put you in your place, {first}.",  #Hellsing
@@ -129,7 +129,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "HAH HUH HAH HUH",  #jojo
     "{first} just warped into the group!",
     "I..it's..it's just {first}.",
-    "Sugoi, Dekai. {first} Joined!",
+    "WHAT THE FUCK {first} JOINED!",
     "{first}, do you know gods of death love apples?",  #Death Note owo
     "I'll take a Krabby Patty.... and eat it",  #Death Note owo
     "AI AI CAPTAIN",  #Tokyo Ghoul
@@ -137,7 +137,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} just joined! Gear.....second!",  #Op
     "Omae wa mou....shindeiru NANI?",
     "Hey {first}, the leaf village lotus blooms twice!",  #Naruto stuff begins from here
-    "{first} Joined! Omote renge!",
+    "{first} Joined! ",
     "{first} joined!, Gate of Opening...open!",
     "{first} joined!, Gate of Healing...open!",
     "{first} joined!, Gate of Life...open!",
@@ -146,12 +146,12 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} joined!, Gate of View...open!",
     "{first} joined!, Gate of Shock...open!",
     "{first} joined!, Gate of Death...open!",
-    "{first}! I, Madara! declare you the strongest",
-    "{first}, this time I'll lend you my power. ",  #Kyuubi to naruto
-    "{first}, welcome to the hidden leaf village!",  # Naruto thingies end here
+    "{first}! Heyyo!",
+    "{first}, this time to cook krabby patty",  #Kyuubi to naruto
+    "{first}, welcome to the bikini bottom",  # Naruto thingies end here
     "In the jungle, you must wait...until the dice read five or eight.",  #Jumanji stuff
-    "Dr.{first} Famed archeologist and international explorer,\nWelcome to Jumanji!\nJumanji's Fate is up to you now.",
-    "{first}, this will not be an easy mission - monkeys slow the expedition.",  #End of Jumanji stuff
+    "Dr.{first} Famed archeologist and international explorer,\nWelcome to Krusty Krab!\nKrusty Krab is up to you now.",
+    "{first}, this will not be an easy mission.",  #End of Jumanji stuff
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} will be missed.",
@@ -209,7 +209,7 @@ DEFAULT_GOODBYE_MESSAGES = [
     "Use bombs wisely",
     "Nobody knows the troubles you have seen",
     "You look fat you should exercise more",
-    "Follow the zebra",
+    "Follow the Squidward",
     "Why so blue?",
     "The devil in disguise",
     "Go outside",
