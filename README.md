@@ -18,7 +18,7 @@ The Support group can be reached out to at [Voha Union](https://t.me/VohaUnion),
 
 News channel as at [Voha Updates](https://t.me/VohaUpdate) 
 ## CREDIT
-1. Thanks for [Tsunayoshi Sawada](https://github/TsunayoshiSawada) because this bot is the base of [saitamarobot](https://github.com/AnimeKaizoku/SaitamaRobot)
+1. Thanks for [Tsunayoshi Sawada](https://github.com/TsunayoshiSawada?) because this bot is the base of [saitamarobot](https://github.com/AnimeKaizoku/SaitamaRobot)
 2. And thanks for [Paul](https://github/paulsonoflars) Because I made [Marie](https://github.com/PaulSonOfLars/tgbot)
 (
 ## How to setup/deploy.
