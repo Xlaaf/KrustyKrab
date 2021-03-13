@@ -9,6 +9,7 @@
 
 ## DONATE
 https://saweria.co/Xlaaf
+https://paypal.me/xlaaf
 
 A modular Telegram Python bot based in saitama repo.
 
