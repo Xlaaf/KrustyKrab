@@ -13,7 +13,7 @@ DEFAULT_GOODBYE = 'Nice knowing ya!'
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",  #Discord welcome messages copied
     "Ready player {first}",
-    "Genos, {first} is here.",
+    "Patrick, {first} is here.",
     "A wild {first} appeared.",
     "{first} came in like a Lion!",
     "{first} has joined your party.",
@@ -61,13 +61,13 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} just fell into the chat!",
     "Something just fell from the sky! - oh, its {first}.",
     "{first} Just teleported into the chat!",
-    "Hi, {first}, show me your Hunter License!",  #Hunter Hunter
-    "I'm looking for Garo, oh wait nvm it's {first}.",  #One Punch man s2
+    "Hi, {first}, show me your Shake License!",  #Hunter Hunter
+    "I'm looking for Squidward, oh wait nvm it's {first}.",  #One Punch man s2
     "Welcome {first}, leaving is not an option!",
     "Run Forest! ..I mean...{first}.",
-    "{first} do 100 push-ups, 100 sit-ups, 100 squats, and 10km running EVERY SINGLE DAY!!!",  #One Punch ma
-    "Huh?\nDid someone with a disaster level just join?\nOh wait, it's just {first}.",  #One Punch ma 
-    "Hey, {first}, ever heard the King Engine?",  #One Punch ma
+    "{first} let's practice cooking krabby patty",  #One Punch ma
+    "Huh?\nDid someone with a Patrick just join?\nOh wait, it's just {first}.",  #One Punch ma 
+    "Hey, {first}, ever heard the Hole of Death?",  #One Punch ma
     "Hey, {first}, empty your pockets.",
     "Hey, {first}!, are you strong?",
     "Call the Avengers! - {first} just joined the chat.",
@@ -112,10 +112,10 @@ DEFAULT_WELCOME_MESSAGES = [
     "Ah, {first} the Platypus, you're just in time... to be trapped.",
     "*snaps fingers and teleports {first} here*",
     "{first}! What is a fish and a rabbit combined?",  #Lifereload - kaizoku member.
-    "{first} just arrived. Diable Jamble!",  #One Piece Sanji
-    "{first} just arrived. Aschente!",  #No Game No Life
+    "{first} just arrived. This is your krabby patty",  #One Piece Sanji
+    "{first} just arrived. Let's cook",  #No Game No Life
     "{first} say Aschente to swear by the pledges.",  #No Game No Life
-    "{first} just joined. El Psy congroo!",  #Steins Gate
+    "{first} just joined. Watch out for him weaboo",  #Steins Gate
     "Irasshaimase {first}!",  #weeabo shit
     "Hi {first}, what is 1000-7?",  #tokyo ghoul
     "Come. I don't want to destroy this place",  #hunter x hunter
@@ -123,19 +123,19 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hey {first}...have you ever heard these words?",  #BNHA
     "Can't a guy get a little sleep around here?",  #Kamina Falls – Gurren Lagann
     "It's time someone put you in your place, {first}.",  #Hellsing
-    "Unit-01's reactivated..",  #Neon Genesis: Evangelion
+    "Spongetron activated!..",  #Neon Genesis: Evangelion
     "Prepare for trouble...And make it double",  #Pokemon
     "Hey {first}, are You Challenging Me?",  #Shaggy
-    "Oh? You're Approaching Me?",  #jojo
+    "HAH HUH HAH HUH",  #jojo
     "{first} just warped into the group!",
     "I..it's..it's just {first}.",
     "Sugoi, Dekai. {first} Joined!",
     "{first}, do you know gods of death love apples?",  #Death Note owo
-    "I'll take a potato chip.... and eat it",  #Death Note owo
-    "Oshiete oshiete yo sono shikumi wo!",  #Tokyo Ghoul
-    "Kaizoku ou ni...nvm wrong anime.",  #op
+    "I'll take a Krabby Patty.... and eat it",  #Death Note owo
+    "AI AI CAPTAIN",  #Tokyo Ghoul
+    "Who you!.",  #op
     "{first} just joined! Gear.....second!",  #Op
-    "Omae wa mou....shindeiru",
+    "Omae wa mou....shindeiru NANI?",
     "Hey {first}, the leaf village lotus blooms twice!",  #Naruto stuff begins from here
     "{first} Joined! Omote renge!",
     "{first} joined!, Gate of Opening...open!",
@@ -172,7 +172,7 @@ DEFAULT_GOODBYE_MESSAGES = [
     "You know we're gonna miss you {first}. Right? Right? Right?",
     "Congratulations, {first}! You're officially free of this mess.",
     "{first}. You were an opponent worth fighting.",
-    "You're leaving, {first}? Yare Yare Daze.",
+    "You're leaving, {first}? You krabby leaving.",
     "Bring him the photo",
     "Go outside!",
     "Ask again later",
