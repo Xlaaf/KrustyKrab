@@ -59,7 +59,7 @@ I hope I'm happy after using me! Type /help for feature of krusty Krab!
 HELP_STRINGS = """
 Hello friend! Introducing, my name is SpongeBob! I'm a chef at the Krusty Krab. And below are the features added from the KrustyKrab.
 
-*Main* commands available: [🍔](https://telegra.ph/file/3d10ec6548d494889f393.mp4)
+*Main* commands available: [🍔](https://telegra.ph/file/39b6a0f820f69b64e0619.jpg)
  🍔 /help: PM's you this message.
  🍔 /help <module name>: PM's you info about that module.
  🍔 /donate: information on how to donate!
@@ -74,7 +74,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/f3194413d1014e459a27b.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/28829dc0d9d26209ad635.mp4"
 
 DONATE_STRING = """Hello Krabby Lovers!, glad to hear you want to donate!
 Spongebob is hosted on one of Heroku's Servers. if you want to donate to me you can use this link.
