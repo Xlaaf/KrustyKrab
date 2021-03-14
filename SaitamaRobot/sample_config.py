@@ -60,7 +60,7 @@ class Config(object):
     SPAMMERS = None
     '''
     Use this if you are using REDIS Sever ->
-    REDIS_URL = redis://you-server@redis.blabla.com:1080 #1080 is port number
+    REDIS_URL =redis-18169.c246.us-east-1-4.ec2.cloud.redislabs.com:18169
     '''
 
 class Production(Config):
