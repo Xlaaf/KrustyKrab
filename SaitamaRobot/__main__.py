@@ -535,7 +535,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Let's Cook a Krabby Patty!.")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Let's Slash A Titan!!.")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
@@ -579,7 +579,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling from krusty if you have bug go to @vohaunion.")
+        LOGGER.info("Using long polling from ConnieCyro if you have bug go to @surveycorpssrobot.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
