@@ -51,21 +51,19 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello Krabby Lovers! {} You want krabby?
-I'm a chef at the Krusty Krab! You want to order something? Message @krustykrabroobot!
-I hope I'm happy after using me! Type /help for feature of krusty Krab!
+Hey! My name is Connie Springer! I am a 104 cadet graduate soldier! I'm very good at fighting Titan. Add me to your group and I will kill all the Titans!
 """
 
 HELP_STRINGS = """
-Hello friend! Introducing, my name is SpongeBob! I'm a chef at the Krusty Krab. And below are the features added from the KrustyKrab.
+Hello friend! Introducing, my name is Connie! I'm a Soldier survey corps at the attack on titan. And below are the features added from the KrustyKrab.
 
-*Main* commands available: [🍔](https://telegra.ph/file/39b6a0f820f69b64e0619.jpg)
- 🍔 /help: PM's you this message.
- 🍔 /help <module name>: PM's you info about that module.
- 🍔 /donate: information on how to donate!
- 🍔 /settings:
-   🍟 in PM: will send you your settings for all supported modules.
-   🍟 in a group: will redirect you to pm, with all that chat's settings.
+*Main* commands available: [⚔️](https://telegra.ph/file/a33d2abb351c49fba9ca9.jpg)
+ ⚔️ /help: PM's you this message.
+ ⚔️ /help <module name>: PM's you info about that module.
+ ⚔️ /donate: information on how to donate!
+ ⚔️ /settings:
+   🛠️ in PM: will send you your settings for all supported modules.
+   🛠️ in a group: will redirect you to pm, with all that chat's settings.
 
 
 {}
@@ -74,10 +72,10 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/28829dc0d9d26209ad635.mp4"
+SAITAMA_IMG = "https://telegra.ph/file/2cafcede1a6ed33946ee9.mp4"
 
-DONATE_STRING = """Hello Krabby Lovers!, glad to hear you want to donate!
-Spongebob is hosted on one of Heroku's Servers. if you want to donate to me you can use this link.
+DONATE_STRING = """Hello attack on Titan lovers!, glad to hear you want to donate!
+Connie is hosted on one of Heroku's Servers. if you want to donate to me you can use this link.
 https://saweria.co/Xlaaf
 https://paypal.me/xlaaf
 I'm just an ordinary human who goes to school. If anyone wants to donate, thank you for donating to me
@@ -196,7 +194,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
                         InlineKeyboardButton(
-                            text="➕ Add Spongebob To Your Group",
+                            text="➕ Add Connie To Your Group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                          InlineKeyboardButton(
@@ -206,7 +204,7 @@ def start(update: Update, context: CallbackContext):
                      [
                         InlineKeyboardButton(
                             text=" ❓ Help ❓ ",
-                            url="https://t.me/SpongebobSquarepantsrobot?start=help"),
+                            url="https://t.me/ConnieSpringerRobot?start=help"),
                          InlineKeyboardButton(
                             text=" 📑 Get Started ",
                              url="https://t.me/VohaUpdate/51")        
@@ -214,13 +212,13 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                             text="🎗️ Support Group 🎗️",
-                             url="https://t.me/VohaUnion")
+                             text="🎗️ Support Bot 🎗️",
+                             url="https://t.me/SurveyCorpssRobot")
                     
                     ]]))
     else:
         update.effective_message.reply_text(
-            "Heyya! You want a Krabby?"
+            "Let's slash a Titan!"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
