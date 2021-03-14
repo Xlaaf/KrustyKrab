@@ -4,8 +4,7 @@
 
 
   
-  [![Deploy](https://telegra.ph/file/a33d2abb351c49fba9ca9.jpg)](https://heroku.com/deploy?template=https://github.com/farihdzaky/ConnieBot.git)
-
+  
 
 ## DONATE
 https://saweria.co/Xlaaf
@@ -13,7 +12,7 @@ https://paypal.me/xlaaf
 
 A modular Telegram Python bot based in saitama repo.
 
-Can be found on telegram as [SpongebobRobot](https://t.me/SpongebonSquarepantsRobot).
+Can be found on telegram as [Connie](https://t.me/ConnieSpringerRobot).
 
 The Support group can be reached out to at [Voha Union](https://t.me/VohaUnion), where you can ask for help about [SpongebobRobot](https://t.me/Spongebobsquarepantsrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
@@ -39,6 +38,7 @@ Now go to https://dashboard.heroku.com/apps/(app-name)/resources ( Replace (app-
 REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/farihdzaky/ConnieBot.git)
 
 </details>  
 <details>
