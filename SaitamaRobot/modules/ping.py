@@ -70,17 +70,14 @@ def ping_func(to_ping: List[str]) -> List[str]:
 
 @run_async
 @sudo_plus
-def ping(update: Update, context: CallbackContext):
+def ping(update: Update, _):
     msg = update.effective_message
-
     start_time = time.time()
     message = msg.reply_text("Pinging...")
     end_time = time.time()
-    telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
-    uptime = get_readable_time((time.time() - StartTime))
-
+    ping_time = round((end_time - start_time) * 1000, 3)
     message.edit_text(
-        "*Pong!!!*\n`{}ms`".format(ping_time), parse_mode=ParseMode.MARKDOWN
+        "*Pong!!!*\n`{}ms`".format(ping_time), parse_mode=ParseMode.HTML
     )
 
 
