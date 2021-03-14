@@ -20,8 +20,8 @@ The Support group can be reached out to at [Voha Union](https://t.me/VohaUnion),
 News channel as at [Voha Updates](https://t.me/VohaUpdate) 
 ## CREDIT
 1. Thanks for [Tsunayoshi Sawada](https://github.com/TsunayoshiSawada?) because this bot is the base of [saitamarobot](https://github.com/AnimeKaizoku/SaitamaRobot)
-2. And thanks for [Paul](https://github/paulsonoflars) Because I made [Marie](https://github.com/PaulSonOfLars/tgbot)
-(
+2. And thanks for [Paul](https://github/paulsonoflars) Because he made [Marie](https://github.com/PaulSonOfLars/tgbot)
+
 ## How to setup/deploy.
 
 ### Read these notes carefully before proceeding 
@@ -174,16 +174,13 @@ You can use [nssm](https://nssm.cc/usage) to install the bot as service on windo
 Make sure to edit the start and restart bats to your needs. 
 Note: the restart bat requires that User account control be disabled.
 
-For queries or any issues regarding the bot please open an issue ticket or visit us at [One Punch Support](https://t.me/OnePunchSupport)
+For queries or any issues regarding the bot please open an issue ticket or visit us at [Voha Union](https://t.me/VohaUnion)
 ## How to setup on Heroku 
 For starters click on this button 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Roxy-sama/SenkuRobot.git) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Roxy-sama/Spongebob.git) 
 
 
-## Credits
-The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
-This repo was just revamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
 
 Also, missing proper credit for blacklistusers taken from TheRealPhoenixBot (will add it later, this note says unless it is done)
 
