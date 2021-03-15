@@ -77,7 +77,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Who needs Google? You're everything we were searching for.",
     "This place must have free WiFi, cause I'm feeling a connection.",
     "Speak friend and enter.",
-    "Welcome you are",
+    "Welcome To Hell!",
     "Welcome {first}, your princess is in another castle.",
     "Hi {first}, welcome to the dark side.",
     "Hola {first}, beware of people with disaster levels",
