@@ -64,20 +64,20 @@ def addpiro(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
         
     if int(user_id) in DEV_USERS:
-      message.reply_text("This member is already a Sandy ")
+      message.reply_text("This member is already a Military ")
         
     if user_id in DRAGONS:
-        rt += "Requested HQ to promote a Spongebob to Sandy ."
+        rt += "Requested HQ to promote a Survey Corps to Military ."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "Requested HQ to promote a Patrick to Sandy ."
+        rt += "Requested HQ to promote a Garrison to Military ."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HQ to promote a Squidward to Sandy."
+        rt += "Requested HQ to promote a Police Military to Military."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -88,7 +88,7 @@ def addpiro(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nSuccessfully set Krusty level of {} to Sandy!".format(
+        rt + "\nSuccessfully set Attack level of {} to Military!".format(
             user_member.first_name))
 
     log_message = (
@@ -124,16 +124,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This member is already a Spongebob")
+        message.reply_text("This member is already a Survey Corps")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested HA to promote a Patrick to Spongebob."
+        rt += "Requested HA to promote a Garrison to Survey Corps."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote a Squidward to Spongebob."
+        rt += "Requested HA to promote a Police Military to Survey Corps."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -144,7 +144,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nSuccessfully set Krusty Level of {} to Spongebob!".format(
+        rt + "\nSuccessfully set Krusty Level of {} to Survey Corps!".format(
             user_member.first_name))
 
     log_message = (
@@ -183,16 +183,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HA to demote this Spongebob to Patrick"
+        rt += "Requested HA to demote this Survey Corps to Garrison"
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a Patrick.")
+        message.reply_text("This user is already a Garrison.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this Squidward to Patrick"
+        rt += "Requested HA to promote this Police Military to Garrison"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -203,7 +203,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as a Patrick!")
+        rt + f"\n{user_member.first_name} was added as a Garrison!")
 
     log_message = (
         f"#SUPPORT\n"
@@ -238,17 +238,17 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Spongebob, Demoting to Squidward."
+        rt += "This member is a Survey Corps, Demoting to Police Military."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Patrick, Demoting to Squidward."
+        rt += "This user is already a Garrison, Demoting to Police Military."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        message.reply_text("This user is already a Squidward.")
+        message.reply_text("This user is already a Police Military.")
         return ""
 
     data['whitelists'].append(user_id)
@@ -259,7 +259,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a Squidward!")
+        f"\nSuccessfully promoted {user_member.first_name} to a Police Military!")
 
     log_message = (
         f"#WHITELIST\n"
@@ -294,22 +294,22 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Spongebob, Demoting to Pearl."
+        rt += "This member is a Survey Corps, Demoting to Traine Corps."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Patrick, Demoting to Pearl."
+        rt += "This user is already a Garrison, Demoting to Traine Corps."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is already a Squidward, Demoting to Pearl."
+        rt += "This user is already a Police Military, Demoting to Traine Corps."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already a Pearl.")
+        message.reply_text("This user is already a Traine Corps.")
         return ""
 
     data['tigers'].append(user_id)
@@ -320,7 +320,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a Pearl!"
+        f"\nSuccessfully promoted {user_member.first_name} to a Traine Corps!"
     )
 
     log_message = (
@@ -375,7 +375,7 @@ def rmpiro(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Sandy!")
+        message.reply_text("This user is not a Military!")
         return ""
       
       
@@ -419,7 +419,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Spongebob!")
+        message.reply_text("This user is not a Survey Corps!")
         return ""
 
 
@@ -462,7 +462,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Patrick!")
+        message.reply_text("This user is not a Garrison!")
         return ""
 
 
@@ -504,7 +504,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Squidward!")
+        message.reply_text("This user is not a Police Military!")
         return ""
 
 
@@ -546,14 +546,14 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Pearl!")
+        message.reply_text("This user is not a Traine Corps!")
         return ""
 
 
 @run_async
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Squidward 🐙:</b>\n"
+    reply = "<b>Known Police Military:</b>\n"
     bot = context.bot
     for each_user in WOLVES:
         user_id = int(each_user)
@@ -569,7 +569,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 @run_async
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Pearl🐳:</b>\n"
+    reply = "<b>Known Traine Corps:</b>\n"
     bot = context.bot
     for each_user in TIGERS:
         user_id = int(each_user)
@@ -585,7 +585,7 @@ def tigerlist(update: Update, context: CallbackContext):
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known Patrick:</b>\n"
+    reply = "<b>Known Garrison:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -601,7 +601,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known Spongebob:</b>\n"
+    reply = "<b>Known Survey Corps:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -617,7 +617,7 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Known Staff Krusty Krab:</b>\n"
+    reply = "<b>Known Military:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -634,16 +634,16 @@ Commands listed here only work for users with special access are mainly used for
 Group admins/group owners do not need these commands. 
 
  ╔ *List all special users:*
- ╠ `/spongebob`*:* Lists all Spongebob
- ╠ `/patrick`*:* Lists all Patrick
- ╠ `/pearl`*:* Lists all Pearl
- ╠ `/squidward`*:* Lists all Squidward
- ╠ `/staff`*:* Lists all Staff Krusty Krab members
- ╠ `/addspongebob`*:* Adds a user to spongebob
- ╠ `/addpatrick`*:* Adds a user to patrick
- ╠ `/addpearl`*:* Adds a user to pearl
- ╠ `/addsquidwarf`*:* Adds a user to squidward
- ╚ `Add dev doesnt exist, devs should know how to add themselves`
+ ╠ `/surveycorps`*:* Lists all survey corps
+ ╠ `/garrison`*:* Lists all Garrison
+ ╠ `/traine`*:* Lists all Traine
+ ╠ `/police`*:* Lists all Police 
+ ╠ `/military`*:* Lists all Military Member
+ ╠ `/addsurveycorps`*:* Adds a user to Survey corps
+ ╠ `/addgarrison`*:* Adds a user to garrison
+ ╠ `/addtraine`*:* Adds a user to traine
+ ╠ `/addpolice`*:* Adds a user to Police
+ ╚ `Add Military doesnt exist, devs should know how to add themselves`
 
  ╔ *Ping:*
  ╠ `/ping`*:* gets ping time of bot to telegram server
@@ -715,30 +715,30 @@ Group admins/group owners do not need these commands.
  ╠ `/gban <id> <reason>`*:* Gbans the user, works by reply too
  ╠ `/ungban`*:* Ungbans the user, same usage as gban
  ╚ `/gbanlist`*:* Outputs a list of gbanned users
-Go to @krustykrabroobot for krabby patty!
-Visit @VohaUnion for more information.
+ 
+Chat @Surveycorpssrobot for more information.
 """
 
-DEV_HANDLER = CommandHandler(("addpiro", "addsandy"), addpiro)
-SUDO_HANDLER = CommandHandler(("addsudo", "addspongebob"), addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "addpatrick"), addsupport)
-TIGER_HANDLER = CommandHandler(("addplankton"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addsquidward"), addwhitelist)
+DEV_HANDLER = CommandHandler(("addpiro", "addmilitary"), addpiro)
+SUDO_HANDLER = CommandHandler(("addsudo", "addsurveycorps"), addsudo)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "addgarrison"), addsupport)
+TIGER_HANDLER = CommandHandler(("addtraine"), addtiger)
+WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addpolice"), addwhitelist)
 
-RMPIRO_HANDLER = CommandHandler(("rmpiro", "removesandy"), rmpiro)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "removespongebob"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removepatrick"),
+RMPIRO_HANDLER = CommandHandler(("rmpiro", "removemilitary"), rmpiro)
+UNSUDO_HANDLER = CommandHandler(("removesudo", "removesurveycorps"), removesudo)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removegarrison"),
                                    removesupport)
-UNTIGER_HANDLER = CommandHandler(("removepearl"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removesquidward"),
+UNTIGER_HANDLER = CommandHandler(("removetraine"), removetiger)
+UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removepolice"),
                                      removewhitelist)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "squidward"],
+WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "police"],
                                        whitelistlist)
-TIGERLIST_HANDLER = CommandHandler(["pearl"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "patrick"], supportlist)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "spongebob"], sudolist)
-DEVLIST_HANDLER = CommandHandler(["devlist", "staff"], devlist)
+TIGERLIST_HANDLER = CommandHandler(["traine"], tigerlist)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "garrison"], supportlist)
+SUDOLIST_HANDLER = CommandHandler(["sudolist", "surveycorps"], sudolist)
+DEVLIST_HANDLER = CommandHandler(["devlist", "military"], devlist)
 
 dispatcher.add_handler(DEV_HANDLER)
 dispatcher.add_handler(SUDO_HANDLER)
