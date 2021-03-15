@@ -12,7 +12,7 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
 
-GIF_ID = 'CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE'
+GIF_ID = 'BAADBAADLgIAAryqFFNz409jAZIwLQI'
 
 
 @run_async
@@ -25,7 +25,7 @@ def sanitize(update: Update, context: CallbackContext):
     message = update.effective_message
     name = message.reply_to_message.from_user.first_name if message.reply_to_message else message.from_user.first_name
     reply_animation = message.reply_to_message.reply_animation if message.reply_to_message else message.reply_animation
-    reply_animation(GIF_ID, caption=f'*Sanitizes {name}*')
+    reply_animation(GIF_ID, caption=f'*slash {name}*')
 
 
 @run_async
@@ -34,7 +34,7 @@ def sanitize(update: Update, context: CallbackContext):
     name = message.reply_to_message.from_user.first_name if message.reply_to_message else message.from_user.first_name
     reply_animation = message.reply_to_message.reply_animation if message.reply_to_message else message.reply_animation
     reply_animation(
-        random.choice(fun_strings.GIFS), caption=f'*Sanitizes {name}*')
+        random.choice(fun_strings.GIFS), caption=f'*slash {name}*')
 
 #plugin by t.me/RCage
 @run_async
