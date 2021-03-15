@@ -17,7 +17,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "A wild {first} appeared.",
     "{first} came in like a Lion!",
     "{first} has joined your party.",
-    "{first} just joined. Can I get a Krabby patty?",
+    "{first} just joined. Can I get a Beef??",
     "{first} just joined the chat - where you license?",
     "{first} just joined. Everyone, look busy!",
     "Welcome, {first}. Stay awhile and listen.",
@@ -62,11 +62,11 @@ DEFAULT_WELCOME_MESSAGES = [
     "Something just fell from the sky! - oh, its {first}.",
     "{first} Just teleported into the chat!",
     "Hi, {first}, show me your Shake License!",  #Hunter Hunter
-    "I'm looking for Squidward, oh wait nvm it's {first}.",  #One Punch man s2
+    "I'm looking for Sasha, oh wait nvm it's {first}.",  #One Punch man s2
     "Welcome {first}, leaving is not an option!",
     "Run Forest! ..I mean...{first}.",
-    "{first} let's practice cooking krabby patty",  #One Punch ma
-    "Huh?\nDid someone with a Patrick just join?\nOh wait, it's just {first}.",  #One Punch ma 
+    "{first} let's practice slash titan!",  #One Punch ma
+    "Huh?\nDid someone with a Survey Corps just join?\nOh wait, it's just {first}.",  #One Punch ma 
     "Hey, {first}, ever heard the Hole of Death?",  #One Punch ma
     "Hey, {first}, empty your pockets.",
     "Hey, {first}!, are you strong?",
@@ -92,7 +92,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hey {first}, do you wanna know how I got these scars?",
     "Welcome {first}, drop your weapons and proceed to the spy scanner.",
     "Stay safe {first}, Keep 3 meters social distances between your messages.",  #Corona memes lmao
-    "Hey {first}, Do you know about the flying dutchman?",
+    "Hey {first}, Do you know about the Founding Titan??",
     "You’re here now {first}, Resistance is futile",
     "{first} just arrived, the force is strong with this one.",
     "{first} just joined on president’s orders.",
@@ -112,8 +112,8 @@ DEFAULT_WELCOME_MESSAGES = [
     "Ah, {first} the Platypus, you're just in time... to be trapped.",
     "*snaps fingers and teleports {first} here*",
     "{first}! What is a fish and a rabbit combined?",  #Lifereload - kaizoku member.
-    "{first} just arrived. This is your krabby patty",  #One Piece Sanji
-    "{first} just arrived. Let's cook",  #No Game No Life
+    "{first} just arrived. This is your Titan",  #One Piece Sanji
+    "{first} just arrived. Let's slash titan!",  #No Game No Life
     "{first} say Aschente to swear by the pledges.",  #No Game No Life
     "{first} just joined. Watch out for him weaboo",  #Steins Gate
     "Irasshaimase {first}!",  #weeabo shit
@@ -123,16 +123,16 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hey {first}...have you ever heard these words?",  #BNHA
     "Can't a guy get a little sleep around here?",  #Kamina Falls – Gurren Lagann
     "It's time someone put you in your place, {first}.",  #Hellsing
-    "Spongetron activated!..",  #Neon Genesis: Evangelion
+    "Attack Titan activated!..",  #Neon Genesis: Evangelion
     "Prepare for trouble...And make it double",  #Pokemon
     "Hey {first}, are You Challenging Me?",  #Shaggy
-    "HAH HUH HAH HUH",  #jojo
+    "ORA ORA ORAAAAA",  #jojo
     "{first} just warped into the group!",
     "I..it's..it's just {first}.",
     "WHAT THE FUCK {first} JOINED!",
     "{first}, do you know gods of death love apples?",  #Death Note owo
     "I'll take a Krabby Patty.... and eat it",  #Death Note owo
-    "AI AI CAPTAIN",  #Tokyo Ghoul
+    "Ara Ara {} Just Joined",  #Tokyo Ghoul
     "Who you!.",  #op
     "{first} just joined! Gear.....second!",  #Op
     "Omae wa mou....shindeiru NANI?",
@@ -147,8 +147,8 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} joined!, Gate of Shock...open!",
     "{first} joined!, Gate of Death...open!",
     "{first}! Heyyo!",
-    "{first}, this time to cook krabby patty",  #Kyuubi to naruto
-    "{first}, welcome to the bikini bottom",  # Naruto thingies end here
+    "{first}, this time to slash titan!",  #Kyuubi to naruto
+    "{first}, welcome to Ragako Village",  # Naruto thingies end here
     "In the jungle, you must wait...until the dice read five or eight.",  #Jumanji stuff
     "Dr.{first} Famed archeologist and international explorer,\nWelcome to Krusty Krab!\nKrusty Krab is up to you now.",
     "{first}, this will not be an easy mission.",  #End of Jumanji stuff
