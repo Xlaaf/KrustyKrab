@@ -73,7 +73,7 @@ def ping_func(to_ping: List[str]) -> List[str]:
 def ping(update: Update, _):
     msg = update.effective_message
     start_time = time.time()
-    message = msg.reply_text("Pinging...")
+    message = msg.reply_text("Pinging⚔️...")
     end_time = time.time()
     ping_time = round((end_time - start_time) * 1000, 3)
     message.edit_text(
