@@ -267,7 +267,7 @@ __help__ = """
  • `/rlg`*:* Join ears,nose,mouth and create an emo ;-;
  • `/shout <keyword>`*:* write anything you want to give loud shout
  • `/weebify <text>`*:* returns a weebified text
- • `/sanitize`*:* always use this before /pat or any contact
+ • `/slash`*:* slash a titan
  • `/pat`*:* pats a user, or get patted
  • `/8ball`*:* predicts using 8ball method
  • `/google` `<text query>` *:* search google queries
@@ -275,7 +275,7 @@ __help__ = """
 """
 
 MEME_HANDLER = DisableAbleCommandHandler("meme", meme)
-SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
+SANITIZE_HANDLER = DisableAbleCommandHandler("slash", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
@@ -309,7 +309,7 @@ dispatcher.add_handler(TABLE_HANDLER)
 __mod_name__ = "Fun"
 __command_list__ = [
     "runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide",
-    "table", "pat", "sanitize", "shout", "weebify", "8ball", "meme"
+    "table", "pat", "slash", "shout", "weebify", "8ball", "meme"
 ]
 __handlers__ = [
     RUNS_HANDLER, SLAP_HANDLER, PAT_HANDLER, ROLL_HANDLER, TOSS_HANDLER,
