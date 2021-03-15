@@ -271,22 +271,22 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Bottom Level of this person is Poseidon."
+        text += "\n\nThe Attack Level of this person is Military."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of Krusty Staff."
+        text += "\n\nThis user is member of Staff Military."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Bottom level of this person is Spongebob."
+        text += "\n\nThe Attack level of this person is Survey Corps."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Bottom level of this person is Patrick."
+        text += "\n\nThe Attack level of this person is Garrison."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Bottom level of this person is Pearl."
+        text += "\n\nThe Attack llevel of this person is Traine Corps."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Bottom level of this person is Squidward."
+        text += "\n\nThe Attack level of this person is Police Military."
         disaster_level_present = True
 
     if disaster_level_present:
