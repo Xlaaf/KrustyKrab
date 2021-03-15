@@ -12,8 +12,7 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
 
-GIF_ID = 'CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE'
-
+GIF_ID = 'BAADBAADhgIAAsslpVE_dMKtI_kVtQI'
 
 @run_async
 def runs(update: Update, context: CallbackContext):
@@ -267,7 +266,7 @@ __help__ = """
  • `/rlg`*:* Join ears,nose,mouth and create an emo ;-;
  • `/shout <keyword>`*:* write anything you want to give loud shout
  • `/weebify <text>`*:* returns a weebified text
- • `/sanitize`*:* always use this before /pat or any contact
+ • `/krabbypatty`*:* eat krabby patty
  • `/pat`*:* pats a user, or get patted
  • `/8ball`*:* predicts using 8ball method
  • `/google` `<text query>` *:* search google queries
@@ -275,7 +274,7 @@ __help__ = """
 """
 
 MEME_HANDLER = DisableAbleCommandHandler("meme", meme)
-SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
+SANITIZE_HANDLER = DisableAbleCommandHandler("krabbypatty", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
@@ -309,7 +308,7 @@ dispatcher.add_handler(TABLE_HANDLER)
 __mod_name__ = "Fun"
 __command_list__ = [
     "runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide",
-    "table", "pat", "sanitize", "shout", "weebify", "8ball", "meme"
+    "table", "pat", "krabbypatty", "shout", "weebify", "8ball", "meme"
 ]
 __handlers__ = [
     RUNS_HANDLER, SLAP_HANDLER, PAT_HANDLER, ROLL_HANDLER, TOSS_HANDLER,
