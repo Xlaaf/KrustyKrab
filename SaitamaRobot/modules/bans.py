@@ -52,27 +52,27 @@ def ban(update: Update, context: CallbackContext) -> str:
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
             message.reply_text(
-                "Trying to put me against a Sandy disaster huh?")
+                "Trying to put me against a Military huh?")
             return log_message
         elif user_id in DEV_USERS:
             message.reply_text("I can't act against our own.")
             return log_message
         elif user_id in DRAGONS:
             message.reply_text(
-                "Fighting this Spongebob here will put civilian lives at risk.")
+                "Fighting this Survey Corps here will put civilian lives at risk.")
             return log_message
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Staff Krusty to fight a Patrick."
+                "Bring an order from Military to fight a Garrison."
             )
             return log_message
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Staff Krusty to fight a Plankton."
+                "Bring an order from Military to fight a Police Military."
             )
             return log_message
         elif user_id in WOLVES:
-            message.reply_text("Squidward abilities make them ban immune!")
+            message.reply_text("Police Military abilities make them ban immune!")
             return log_message
         else:
             message.reply_text("This user has immunity and cannot be banned.")
@@ -102,7 +102,7 @@ def ban(update: Update, context: CallbackContext) -> str:
     except BadRequest as excp:
         if excp.message == "Reply message not found":
             # Do not reply
-            message.reply_text('Banned!', quote=False)
+            message.reply_text('Uh,Banned!', quote=False)
             return log
         else:
             LOGGER.warning(update)
