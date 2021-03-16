@@ -201,18 +201,14 @@ def start(update: Update, context: CallbackContext):
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
-        else:
+   else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_animation(
                 SAITAMA_IMG,
-                PM_START_TEXT.format(
-                    escape_markdown(first_name), escape_markdown(context.bot.first_name)
-                ),
+                caption=PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(context.bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN,
-                disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [                   
+                reply_markup=InlineKeyboardMarkup(                   
+                          [[                 
                          InlineKeyboardButton(
                             text="➕ Add SpongeBob To Your Group",
                             url="t.me/{}?startgroup=true".format(
