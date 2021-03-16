@@ -5,8 +5,8 @@ from sys import argv
 from typing import Optional
 
 from SaitamaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
-                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK, pbot,
-                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater)
+                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
+                          dispatcher, StartTime, telethn, updater,igris)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from SaitamaRobot.modules import ALL_MODULES
@@ -53,13 +53,15 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hello Krabby Lovers! {} You want krabby?
 I'm a chef at the Krusty Krab! You want to order something? Message @krustykrabroobot!
-I hope I'm happy after using me! Type /help for feature of krusty Krab!
+I hope You happy after using me! Type /help for feature of krusty Krab!
+
 """
 
 HELP_STRINGS = """
+
 Hello friend! Introducing, my name is SpongeBob! I'm a chef at the Krusty Krab. And below are the features added from the KrustyKrab.
 
-*Main* commands available: [🍔](https://telegra.ph/file/39b6a0f820f69b64e0619.jpg)
+*Main* commands available: [🍔](https://telegra.ph/file/60b74afba1aab1ed7f57b.mp4)
  🍔 /help: PM's you this message.
  🍔 /help <module name>: PM's you info about that module.
  🍔 /donate: information on how to donate!
@@ -74,14 +76,13 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/28829dc0d9d26209ad635.mp4"
+SAITAMA_IMG = "https://telegra.ph/file/3d10ec6548d494889f393.mp4"
 
-DONATE_STRING = """Hello Krabby Lovers!, glad to hear you want to donate!
+DONATE_STRING = """Hello Krabby!, glad to hear you want to donate!
 Spongebob is hosted on one of Heroku's Servers. if you want to donate to me you can use this link.
 https://saweria.co/Xlaaf
-https://paypal.me/xlaaf
-I'm just an ordinary human who goes to school. If anyone wants to donate, thank you for donating to me
-"""
+https://paypal.me/Xlaaf
+I'm just an ordinary human who goes to school. If anyone wants to donate, thank you for donating to me"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -130,6 +131,7 @@ for module_name in ALL_MODULES:
     if hasattr(imported_module, "__user_settings__"):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
+
 # do not async
 def send_help(chat_id, text, keyboard=None):
     if not keyboard:
@@ -157,21 +159,14 @@ def start(update: Update, context: CallbackContext):
             if args[0].lower() == "help":
                 send_help(update.effective_chat.id, HELP_STRINGS)
 
-                    ]]))
-            elif args[0].lower() == "markdownhelp":
-                IMPORTED["extras"].markdown_help_sender(update)
-            elif args[0].lower() == "disasters":
-                IMPORTED["disasters"].send_disasters(update)
             elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
                 chat = dispatcher.bot.getChat(match.group(1))
 
                 if is_user_admin(chat, update.effective_user.id):
-                    send_settings(
-                        match.group(1), update.effective_user.id, False)
+                    send_settings(match.group(1), update.effective_user.id, False)
                 else:
-                    send_settings(
-                        match.group(1), update.effective_user.id, True)
+                    send_settings(match.group(1), update.effective_user.id, True)
 
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
@@ -184,34 +179,24 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
-                        InlineKeyboardButton(
-                            text="➕ Add Spongebob To Your Group",
-                            url="t.me/{}?startgroup=true".format(
-                                context.bot.username)),
-                         InlineKeyboardButton(
-                             text=" 🔔 Updates ",
-                             url="https://t.me/VohaUpdate")
-                     ],
-                     [
-                        InlineKeyboardButton(
-                            text=" ❓ Help ❓ ",
-                            url="https://t.me/SpongebobSquarepantsrobot?start=help"),
-                         InlineKeyboardButton(
-                            text=" 📑 Get Started ",
-                             url="https://t.me/VohaUpdate/51")        
-                       
-                     ],
-                     [
-                        InlineKeyboardButton(
-                             text="🎗️ Support Group 🎗️",
-                             url="https://t.me/VohaUnion")
-                    
-                    ]]))
+                              InlineKeyboardButton(
+                              text="➕Add Spongebob To Your Group",
+                              url="t.me/{}?startgroup=true".format(
+                                  context.bot.username))
+                          ], 
+                          [
+                              InlineKeyboardButton(
+                              text="👩‍💻Support Group",
+                              url=f"https://t.me/vohaunion"),
+                              InlineKeyboardButton(
+                              text="🍔Updates Channel",
+                              url="https://t.me/VohaUpdate")
+                          ]])) 
     else:
         update.effective_message.reply_text(
-            "Heyya! You want a Krabby?"
-            .format(uptime),
+            "Heyya! You want a Krabby ?".format(uptime),
             parse_mode=ParseMode.HTML)
+
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
@@ -305,17 +290,7 @@ def get_help(update: Update, context: CallbackContext):
 
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
-        if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
-            module = args[1].lower()
-            update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
-                reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
-                        text="Help",
-                        url="t.me/{}?start=ghelp_{}".format(
-                            context.bot.username, module))
-                ]]))
-            return
+
         update.effective_message.reply_text(
             "Contact me in PM to get the list of possible commands.",
             reply_markup=InlineKeyboardMarkup([[
@@ -485,7 +460,7 @@ def donate(update: Update, context: CallbackContext):
         if OWNER_ID != 254318997 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
-                "[here](https://paypal.me/xlaaf)".format(DONATION_LINK),
+                "[here]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN)
 
     else:
@@ -523,22 +498,11 @@ def migrate_chats(update: Update, context: CallbackContext):
 
 
 def main():
-
-    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
-        try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Let's Cook a Krabby Patty!.")
-        except Unauthorized:
-            LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!")
-        except BadRequest as e:
-            LOGGER.warning(e.message)
-
     test_handler = CommandHandler("test", test)
     start_handler = CommandHandler("start", start)
 
     help_handler = CommandHandler("help", get_help)
-    help_callback_handler = CallbackQueryHandler(
-        help_button, pattern=r"help_.*")
+    help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_")
 
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(
@@ -570,7 +534,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling from krusty if you have bug go to @vohaunion.")
+        LOGGER.info("Using long polling Need Help? go to @vohaunion.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
@@ -584,5 +548,6 @@ def main():
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
-    pbot.start()
     main()
+
+
