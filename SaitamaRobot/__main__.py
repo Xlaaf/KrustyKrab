@@ -144,7 +144,6 @@ for module_name in ALL_MODULES:
     if hasattr(imported_module, "__user_settings__"):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
-
 # do not async
 def send_help(chat_id, text, keyboard=None):
     if not keyboard:
@@ -201,7 +200,7 @@ def start(update: Update, context: CallbackContext):
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
-   else:
+        else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
                 SAITAMA_IMG,
@@ -212,7 +211,7 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [           
+                        [     
                          InlineKeyboardButton(
                             text="➕ Add SpongeBob To Your Group",
                             url="t.me/{}?startgroup=true".format(
