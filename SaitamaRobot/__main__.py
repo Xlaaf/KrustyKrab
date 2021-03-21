@@ -80,6 +80,7 @@ I hope You happy after using me! Type /help for feature of krusty Krab!
 """
 
 HELP_STRINGS = """
+Hello! This is feature from Krabby patty! I hope You fun.
 *Main* commands available [:](https://telegra.ph/file/fd120b4d2a51251d1b8d4.mp4)
 
  🍔 /help: PM's you this message.
