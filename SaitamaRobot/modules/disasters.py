@@ -148,7 +148,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
             user_member.first_name))
 
     log_message = (
-        f"#SUDO\n"
+        f"#SPONGEBOB\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
         f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
     )
@@ -206,7 +206,7 @@ def addsupport(
         rt + f"\n{user_member.first_name} was added as a Patrick!")
 
     log_message = (
-        f"#SUPPORT\n"
+        f"#PATRICK\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
         f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
     )
@@ -262,7 +262,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         f"\nSuccessfully promoted {user_member.first_name} to a Squidward!")
 
     log_message = (
-        f"#WHITELIST\n"
+        f"#SQUIDWARD\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))} \n"
         f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
     )
@@ -324,7 +324,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
     )
 
     log_message = (
-        f"#TIGER\n"
+        f"#PEARL\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))} \n"
         f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
     )
@@ -363,7 +363,7 @@ def rmpiro(update: Update, context: CallbackContext) -> str:
             json.dump(data, outfile, indent=4)
 
         log_message = (
-            f"#UNDEV\n"
+            f"#UNKRAB\n"
             f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
         )
