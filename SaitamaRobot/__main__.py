@@ -93,7 +93,7 @@ Hello! This is feature from Krabby patty! I hope You fun.
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/201e5edc1a24ce7088d0a.jpg"
+SPONGEBOB_IMG = "https://telegra.ph/file/201e5edc1a24ce7088d0a.jpg"
 
 DONATE_STRING = """Hello Krabby!, glad to hear you want to donate!
 Spongebob is hosted on one of Heroku's Servers. if you want to donate to me you can use this link.
@@ -204,7 +204,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                SAITAMA_IMG,
+                SPONGEBOB_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 ),
