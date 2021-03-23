@@ -118,19 +118,29 @@ def reply_afk(update: Update, context: CallbackContext):
         check_afk(update, context, user_id, fst_name, userc_id)
 
 
-def check_afk(update, context, user_id, fst_name, userc_id):
+
+
+def check_afk(update: Update, context: CallbackContext, user_id: int, fst_name: str, userc_id: int):
     if sql.is_afk(user_id):
         user = sql.check_afk_status(user_id)
+
+        if int(userc_id) == int(user_id):
+            return
+
+        time = humanize.naturaldelta(datetime.now() - user.time)
+
         if not user.reason:
-            if int(userc_id) == int(user_id):
-                return
-            res = "{} is afk".format(fst_name)
+            res = "{} is afk.\nLast seen {} ago.".format(
+                fst_name,
+                time
+            )
             update.effective_message.reply_text(res)
         else:
-            if int(userc_id) == int(user_id):
-                return
-            res = "{} is afk.\nReason: <code>{}</code>".format(
-                html.escape(fst_name), html.escape(user.reason))
+            res = "{} is AFK.\nReason: <code>{}</code>\nLast seen <code>{}</code> ago.".format(
+                html.escape(fst_name),
+                html.escape(user.reason),
+                time
+            )
             update.effective_message.reply_text(res, parse_mode="html")
 
 
