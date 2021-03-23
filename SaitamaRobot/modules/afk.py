@@ -120,29 +120,21 @@ def reply_afk(update: Update, context: CallbackContext):
 
 
 
-def check_afk(update: Update, context: CallbackContext, user_id: int, fst_name: str, userc_id: int):
+def check_afk(update, context, user_id, fst_name, userc_id):
     if sql.is_afk(user_id):
         user = sql.check_afk_status(user_id)
-
-        if int(userc_id) == int(user_id):
-            return
-
-        time = humanize.naturaldelta(datetime.now() - user.time)
-
         if not user.reason:
-            res = "{} is afk.\nLast seen {} ago.".format(
-                fst_name,
-                time
-            )
+            if int(userc_id) == int(user_id):
+                return
+            res = "{} is afk".format(fst_name)
             update.effective_message.reply_text(res)
         else:
-            res = "{} is AFK.\nReason: <code>{}</code>\nLast seen <code>{}</code> ago.".format(
-                html.escape(fst_name),
-                html.escape(user.reason),
-                time
-            )
+            if int(userc_id) == int(user_id):
+                return
+            res = "{} Going to Slash the Titans!.\nAnd the reason: <code>{}</code>".format(
+                html.escape(fst_name),html.escape(user.reason),
+                 html.escape(user.reason))
             update.effective_message.reply_text(res, parse_mode="html")
-
 
 __help__ = """
  • `/afk <reason>`*:* mark yourself as AFK(away from keyboard).
