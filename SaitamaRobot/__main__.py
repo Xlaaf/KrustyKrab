@@ -93,7 +93,7 @@ Hello! This is feature from Krabby patty! I hope You fun.
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SPONGEBOB_IMG = "https://telegra.ph/file/201e5edc1a24ce7088d0a.jpg"
+SPONGEBOB_IMG = "https://telegra.ph/file/4a91f77db0039ab510412.jpg"
 
 DONATE_STRING = """Hello Krabby!, glad to hear you want to donate!
 Spongebob is hosted on one of Heroku's Servers. if you want to donate to me you can use this link.
