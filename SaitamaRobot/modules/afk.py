@@ -118,8 +118,6 @@ def reply_afk(update: Update, context: CallbackContext):
         check_afk(update, context, user_id, fst_name, userc_id)
 
 
-
-
 def check_afk(update, context, user_id, fst_name, userc_id):
     if sql.is_afk(user_id):
         user = sql.check_afk_status(user_id)
@@ -131,10 +129,10 @@ def check_afk(update, context, user_id, fst_name, userc_id):
         else:
             if int(userc_id) == int(user_id):
                 return
-            res = "{} Going to Slash the Titans!.\nAnd the reason: <code>{}</code>".format(
-                html.escape(fst_name),html.escape(user.reason),
-                 html.escape(user.reason))
+            res = "{} is afk.\nReason: <code>{}</code>".format(
+                html.escape(fst_name), html.escape(user.reason))
             update.effective_message.reply_text(res, parse_mode="html")
+
 
 __help__ = """
  • `/afk <reason>`*:* mark yourself as AFK(away from keyboard).
