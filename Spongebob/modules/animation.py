@@ -1,11 +1,11 @@
 import time
 
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
+from Spongebob import dispatcher
+from Spongebob.modules.disable import DisableAbleCommandHandler
+from Spongebob.modules.helper_funcs.chat_status import user_admin
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
-#from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+#from Spongebob.modules.helper_funcs.alternate import typing_action
 #sleep how many times after each edit in 'police'
 EDIT_SLEEP = 2
 #edit how many times in 'police'
