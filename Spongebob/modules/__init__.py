@@ -1,4 +1,4 @@
-from Spongebob import LOAD, LOGGER, NO_LOAD
+from SaitamaRobot import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
