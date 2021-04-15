@@ -9,7 +9,7 @@ from telegram.utils.helpers import mention_html
 import Spongebob.modules.sql.blacklist_sql as sql
 from Spongebob import dispatcher, LOGGER
 from Spongebob.modules.disable import DisableAbleCommandHandler
-from Spongebpb.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Spongebob.modules.helper_funcs.chat_status import user_admin, user_not_admin
 from Spongebob.modules.helper_funcs.extraction import extract_text
 from Spongebob.modules.helper_funcs.misc import split_message
 from Spongebob.modules.log_channel import loggable
