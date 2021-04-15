@@ -8,10 +8,10 @@ from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async)
 
 from telegram.ext import Filters, MessageHandler, run_async
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.thonkify_dict import thonkifydict
+from Spongebob.modules.helper_funcs.extraction import extract_user_and_text
+from Spongebob.modules.disable import DisableAbleCommandHandler
+from Spongebob import dispatcher
+from Spongebob.modules.thonkify_dict import thonkifydict
 
 @run_async
 def plet(update: Update, context: CallbackContext):
