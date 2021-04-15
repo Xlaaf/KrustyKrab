@@ -13,12 +13,12 @@ import urllib.request
 import urllib.parse
 import requests
 
-from SaitamaRobot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS,
+from Spongebob import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS,
                           TIGERS, WOLVES, dispatcher, updater)
-from SaitamaRobot.__main__ import STATS, TOKEN, USER_INFO
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.filters import CustomFilters
-from SaitamaRobot.modules.helper_funcs.chat_status import sudo_plus, user_admin
+from Spongebob.__main__ import STATS, TOKEN, USER_INFO
+from Spongebob.modules.disable import DisableAbleCommandHandler
+from Spongebob.modules.helper_funcs.filters import CustomFilters
+from Spongebob.modules.helper_funcs.chat_status import sudo_plus, user_admin
 from telegram import MessageEntity, ParseMode, Update, constants
 from telegram.error import BadRequest
 from emoji import UNICODE_EMOJI
