@@ -1,5 +1,5 @@
 from telethon.tl.types import UserStatusLastMonth, UserStatusLastWeek, ChatBannedRights
-from SaitamaRobot.event import register
+from Spongebob.event import register
 from telethon import *
 from telethon.tl.functions.channels import (EditBannedRequest)
                                             
