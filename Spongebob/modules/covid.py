@@ -10,10 +10,10 @@ from urllib.error import URLError, HTTPError
 from bs4 import BeautifulSoup
 import requests
 from typing import List
-from SaitamaRobot import dispatcher
+from Spongebob import dispatcher
 from telegram import ParseMode, InputMediaPhoto, Update, TelegramError, ChatAction
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from Spongebob.modules.disable import DisableAbleCommandHandler
 
 @run_async
 def covid(update: Update, context: CallbackContext):
