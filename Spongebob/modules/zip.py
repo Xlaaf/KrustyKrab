@@ -1,9 +1,9 @@
 import zipfile
 import time
 import os
-from SaitamaRobot.event import register
-from SaitamaRobot import TEMP_DOWNLOAD_DIRECTORY
-from SaitamaRobot import Client
+from Spongebob.event import register
+from Spongebob import TEMP_DOWNLOAD_DIRECTORY
+from Spongebob import Client
 from telethon import types
 from telethon.tl import functions
 
