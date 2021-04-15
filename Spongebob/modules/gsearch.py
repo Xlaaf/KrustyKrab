@@ -3,8 +3,8 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
-from SaitamaRobot.event import register
-from SaitamaRobot import telethn
+from Spongebob.event import register
+from Spongebob import telethn
 import sys
 import shutil
 from re import findall
