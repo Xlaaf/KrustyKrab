@@ -4,7 +4,7 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer
 
-from SaitamaRobot.modules.sql import SESSION, BASE
+from Spongebob.modules.sql import SESSION, BASE
 
 
 class ChatAccessConnectionSettings(BASE):
