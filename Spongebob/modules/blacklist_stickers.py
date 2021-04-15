@@ -1,7 +1,7 @@
 import html
 from typing import Optional
 
-import Spongeboh.modules.sql.blsticker_sql as sql
+import Spongebob.modules.sql.blsticker_sql as sql
 from Spongebob import LOGGER, dispatcher
 from Spongebob.modules.connection import connected
 from Spongebob.modules.disable import DisableAbleCommandHandler
