@@ -20,7 +20,6 @@ from SaitamaRobot import (
     StartTime,
     telethn,
     updater,
-    kp,
 )
 
 # needed to dynamically load modules
