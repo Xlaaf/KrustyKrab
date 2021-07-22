@@ -7,7 +7,7 @@
   [![Deploy](https://telegra.ph/file/c741342e89d2a417a717e.jpg)](https://heroku.com/deploy?template=https://github.com/Xlaaf/KrustyKrab.git)
 
 
-
+## Repository Now Archived. And Real Repo Has Been Private
 
 
 
@@ -17,9 +17,9 @@ https://paypal.me/xlaaf
 
 A modular Telegram Python bot based in saitama repo.
 
-Can be found on telegram as [SpongebobRobot](https://t.me/SpongebonSquarepantsRobot).
+Can be found on telegram as [SpongebobRobot](https://t.me/SpongebobSquarepantsRobot).
 
-The Support group can be reached out to at [Voha Union](https://t.me/VohaUnion), where you can ask for help about [SpongebobRobot](https://t.me/Spongebobsquarepantsrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Voha Union](https://t.me/VohaChat), where you can ask for help about [SpongebobRobot](https://t.me/Spongebobsquarepantsrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 News channel as at [Voha Updates](https://t.me/VohaUpdate) 
 ## CREDIT
